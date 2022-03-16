@@ -1,1 +1,19 @@
-0x02. C - Functions, nested loop
+#include "main.h"
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	char *mh = "main";
+
+	while (*mh)
+	{
+		_putchar(*mh);
+		mh++;
+	}
+	_putchar('\n');
+
+	return (0);
+}
