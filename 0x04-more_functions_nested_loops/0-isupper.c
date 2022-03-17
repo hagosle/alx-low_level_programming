@@ -1,20 +1,18 @@
-clear
-[A[C[C[C#include "main.h"
+#include "main.h"
 #include <stdio.h>
 
 /**
- * main - check the code.
- *
+ * _isupper -checks if the letter is uppercase
+ * @c: print int
  * Return: Always 0.
  */
-int main(void)
-{[A[A[A[A[A[C[C[C[C[_isupper -checks if the letter is uppercase[B[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D@c: print _isupper(int c)[B[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D
-    if(c>= 'A' && c<='Z')
-    {
-     return (1);
-    }
-    else
-    {
-     return (0);
-    }
-}[B
+int _isupper(int c)
+{
+char c;
+
+    c = '0';
+    printf("%c: %d\n", c, _isdigit(c));
+    c = 'a';
+    printf("%c: %d\n", c, _isdigit(c));
+    return (0);[D[D[C[C
+}[A[A[A[A[A[A[A[D[D       [D[D[Dchar c;[B[B[B[B[B[B[B
