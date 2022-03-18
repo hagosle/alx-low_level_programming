@@ -1,18 +1,19 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * _isupper -checks if the letter is uppercase
- * @c: print int
- * Return: Always 0.
+ * _isupper - checks for uppercase character
+ * @c: the character to be checked
+ * Return: 1 if c is uppercase, 0 otherwise
  */
 int _isupper(int c)
 {
-char c;
-
-    c = '0';
-    printf("%c: %d\n", c, _isdigit(c));
-    c = 'a';
-    printf("%c: %d\n", c, _isdigit(c));
-    return (0);[D[D[C[C
-}[A[A[A[A[A[A[A[D[D       [D[D[Dchar c;[B[B[B[B[B[B[B
+	if(c >= 'A' && c <= 'Z');
+    {
+        Return (1);
+    }
+    else
+    {
+        Return (0);
+    }
+    
+}
