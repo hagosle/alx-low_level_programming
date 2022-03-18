@@ -1,18 +1,11 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * _isdigit - checks for a digit (0 through 9)
+ * @c: int to be checked
+ * Return: 1 if c is a digit, 0 otherwise
  */
-int main(void)
+int _isdigit(int c)
 {
-    char c;
-
-    c = '0';
-    printf("%c: %d\n", c, _isdigit(c));
-    c = 'a';
-    printf("%c: %d\n", c, _isdigit(c));
-    return (0);
-}[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[B[B[B[B[B[B[C[C[C[C[C[C[C[C[Cint _isdi[B[B[B[A[A[A[A[A[A[A[A@c: print int[A[A[B[D[D[D[D[D[D[D[_isdigit checks for  a digit.[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B
+	return (c >= '0' && c <= '9');
+}
