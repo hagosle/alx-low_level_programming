@@ -1,29 +1,25 @@
-#include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
- * _strcpy - copies the string pointed to by src,
- *
- * including the terminating null byte, to the
- *
- * buffer pointed to by dest.
- *
- * @dest: destination.
- *
- * @src: source.
- *
- * Return: the pointer to dest.
+ * main - generates keygen.
+ * Return: 0 Always.
  */
-char *_strcpy(char *dest, char *src)
+int main(void)
 {
-	int count = 0;
+	int r = 0, c = 0;
+	time_t t;
 
-	while (count >= 0)
+	srand((unsigned int) time(&t));
+	while (c < 2772)
 	{
-		*(dest + count) = *(src + count);
-		if (*(src + count) == '\0')
+		r = rand() % 128;
+		if ((c + r) > 2772)
 			break;
-		count++;
+		c = c + r;
+		printf("%c", r);
 	}
-	return (dest);
+	printf("%c\n", (2772 - c));
+	return (0);
 }
 
